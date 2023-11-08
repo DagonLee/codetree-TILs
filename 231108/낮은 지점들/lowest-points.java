@@ -15,7 +15,7 @@ public class Main {
             long y = Integer.parseInt(st.nextToken());
             map.put(x, Math.min(map.getOrDefault(x,MAX),y));
         }
-        int ans = 0;
+        long ans = 0;
         Set<Long> keySet = map.keySet();
         for(long key:keySet){
             ans += map.get(key);
