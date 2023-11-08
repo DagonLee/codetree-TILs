@@ -20,7 +20,7 @@ public class Main {
         for(int i = 0; i < n; i++){
             int target = k - nums[i];
             if(map.containsKey(target)){
-                cnt+= map.get(target);
+                cnt+= map.get(nums[i]) * map.get(target);
             }
         }
         System.out.println(cnt / 2);
