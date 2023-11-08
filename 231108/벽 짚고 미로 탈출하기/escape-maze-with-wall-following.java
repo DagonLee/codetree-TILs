@@ -30,7 +30,7 @@ public class Main {
         visited[x][y] = true;
         while(!q.isEmpty()){
             Person now = q.poll();
-            for(int d = 0 ; d > -3; d--){
+            for(int d = 0 ; d >= -3; d--){
                 int dir = (now.dir + d + 4) % 4;
                 int nx = now.x + dx[dir];
                 int ny = now.y + dy[dir];
