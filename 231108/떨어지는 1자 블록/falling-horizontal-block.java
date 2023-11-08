@@ -36,7 +36,7 @@ public class Main {
         }
         else{
             for(int j = k; j < k + m; j++){
-                grid[0][j] = 1;
+                grid[n - 1][j] = 1;
             }
         }
         for(int i = 0; i < n; i++){
