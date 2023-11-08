@@ -27,7 +27,7 @@ public class Main {
             for(int j = 0; j < n; j++){
                 int val = nums[2][i] + nums[3][j];
                 if(map.containsKey(-val)){
-                    res++;
+                    res+= map.get(-val);
                 }
             }
         }
