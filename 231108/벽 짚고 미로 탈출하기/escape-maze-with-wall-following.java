@@ -18,7 +18,7 @@ public class Main {
     static int[] dy = {1, 0, -1, 0};
     static int n;
     static char[][] grid;
-    static boolean[][] visited;
+    static int[][] visited;
     static StringTokenizer st;
     static boolean inRange(int x, int y){
         return 0 <= x && x < n && 0 <= y && y < n;
@@ -26,8 +26,8 @@ public class Main {
     static int move(int x, int y){
         Queue<Person> q = new LinkedList<>();
         q.add(new Person(x, y, 0, 0));
-        visited = new boolean[n][n];
-        visited[x][y] = true;
+        visited = new int[n][n];
+        visited[x][y]++;
         while(!q.isEmpty()){
             Person now = q.poll();
             for(int d = 0 ; d >= -3; d--){
@@ -37,13 +37,13 @@ public class Main {
                 if(!inRange(nx, ny)){
                     return now.time + 1;
                 }
-                if(visited[nx][ny]){
+                if(visited[nx][ny] > 2){
                     return -1;
                 }
                 if(grid[nx][ny] == '#'){
                     continue;
                 }
-                visited[nx][ny] = true;
+                visited[nx][ny]++;
                 char right = grid[nx + dx[(dir + 1) % 4]][ny + dy[(dir + 1) % 4]];
                 if(right == '#'){
                     q.add(new Person(nx, ny, now.time + 1, dir));
@@ -53,7 +53,7 @@ public class Main {
                     int nd = (dir + 1) % 4;
                     nx += dx[nd];
                     ny += dy[nd];
-                    visited[nx][ny] = true;
+                    visited[nx][ny]++;
                     q.add(new Person(nx, ny, now.time + 2, nd));
                     
                     break;
