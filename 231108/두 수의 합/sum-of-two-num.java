@@ -15,21 +15,15 @@ public class Main {
         for(int i = 0; i < n; i++){
             int val = Integer.parseInt(st.nextToken());
             nums[i] = val;
-            map.put(val, map.getOrDefault(val, 0) + 1);
         }
-        Set<Integer>keySet = map.keySet();
-        for(int key: keySet){
-            int target = k - key;
-            if(map.containsKey(target)){
-                if(target == key){
-                    int cnt = map.get(target);
-                    sum += ((cnt * (cnt - 1)));
-                }
-                else{
-                    sum += (map.get(key) * map.get(target));
-                }
+        for(int i = 0; i < n; i++){
+            int dif = k - nums[i];
+            if(map.containsKey(dif)){
+                sum += map.get(dif);
             }
+            map.put(nums[i], map.getOrDefault(nums[i], 0) + 1);
         }
-        System.out.println(sum / 2);
+        
+        System.out.println(sum);
     }
 }
