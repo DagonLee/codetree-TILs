@@ -16,7 +16,7 @@ public class Main {
         Iterator<Map.Entry<String, Double>> it = map.entrySet().iterator();
         while(it.hasNext()){
             Map.Entry<String, Double> entry = it.next();
-            System.out.println(entry.getKey() + " " + String.format("%.4f",(double)Math.round((entry.getValue() / n) * 10000) / 100));
+            System.out.println(entry.getKey() + " " + String.format("%.4f",(double)Math.round((entry.getValue() / n) * 100)));
         }
         
     }
