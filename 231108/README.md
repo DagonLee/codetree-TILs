@@ -3,12 +3,12 @@
 ## 📚 단계별 학습
 23년 11월 08일 목표(140px)를 달성했어요🥳.
 
-![410xp](https://img.shields.io/badge/EXP-410xp-%235cb85c.svg?for-the-badge)
-![3일째](https://img.shields.io/badge/연속학습-3일째-%23E34F26.svg?for-the-badge)
+![540xp](https://img.shields.io/badge/EXP-540xp-%235cb85c.svg?for-the-badge)
+![4일째](https://img.shields.io/badge/연속학습-4일째-%23E34F26.svg?for-the-badge)
 
 |총 문제수|획득 경험치|연속 학습|
 |---:|---:|---|
-10|410xp|3일째🔥|
+12|540xp|4일째🔥|
 
 |교재|이름|난이도|상태|최근 제출 코드|
 |---|---|:---:|:---:|---|
@@ -22,10 +22,22 @@
 |[Intermediate Mid / 중급 자료구조 / HashMap](https://www.codetree.ai/missions?missionId=8)|[[연습]원소의 합이 0](https://www.codetree.ai/missions/8/problems/the-sum-of-the-elements-is-0)|![어려움][hard]|![Passed][passed]|[링크](https://github.com/DagonLee/codetree-TILs/blob/main/231108/%EC%9B%90%EC%86%8C%EC%9D%98%20%ED%95%A9%EC%9D%B4%200/the-sum-of-the-elements-is-0.java)|
 |[Intermediate Mid / 중급 자료구조 / HashMap](https://www.codetree.ai/missions?missionId=8)|[[연습]순서를 바꾸었을 때 같은 단어 그룹화하기](https://www.codetree.ai/missions/8/problems/group-same-word)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/DagonLee/codetree-TILs/blob/main/231108/%EC%88%9C%EC%84%9C%EB%A5%BC%20%EB%B0%94%EA%BE%B8%EC%97%88%EC%9D%84%20%EB%95%8C%20%EA%B0%99%EC%9D%80%20%EB%8B%A8%EC%96%B4%20%EA%B7%B8%EB%A3%B9%ED%99%94%ED%95%98%EA%B8%B0/group-same-word.java)|
 |[Intermediate Mid / 중급 자료구조 / HashMap](https://www.codetree.ai/missions?missionId=8)|[[테스트]낮은 지점들](https://www.codetree.ai/missions/8/problems/lowest-points)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/DagonLee/codetree-TILs/blob/main/231108/%EB%82%AE%EC%9D%80%20%EC%A7%80%EC%A0%90%EB%93%A4/lowest-points.java)|
+|[Intermediate Low / Simulation / 격자 안에서 단일 객체를 이동](https://www.codetree.ai/missions?missionId=2)|[[연습]떨어지는 1자 블록](https://www.codetree.ai/missions/2/problems/falling-horizontal-block)|![쉬움][easy]|![Passed][passed]|[링크](https://github.com/DagonLee/codetree-TILs/blob/main/231108/%EB%96%A8%EC%96%B4%EC%A7%80%EB%8A%94%201%EC%9E%90%20%EB%B8%94%EB%A1%9D/falling-horizontal-block.java)|
+|[Intermediate Low / Simulation / 격자 안에서 단일 객체를 이동](https://www.codetree.ai/missions?missionId=2)|[[연습]벽 짚고 미로 탈출하기](https://www.codetree.ai/missions/2/problems/escape-maze-with-wall-following)|![보통][medium]|![Passed][passed]|[링크](https://github.com/DagonLee/codetree-TILs/blob/main/231108/%EB%B2%BD%20%EC%A7%9A%EA%B3%A0%20%EB%AF%B8%EB%A1%9C%20%ED%83%88%EC%B6%9C%ED%95%98%EA%B8%B0/escape-maze-with-wall-following.java)|
 
 
 * 획득 경험치: 해설을 보지 않고 푼 문제에 한해 최초 1회 경험치를 획득하실 수 있습니다.
 * 연속 학습:fire:: 경험치를 획득한 날을 학습한 날로 인정합니다.
+
+
+# 🥇 실전 훈련
+|총 문제 수|티어|유형|
+|---:|---|---|
+|1|![Silver3][s3] ~ ![Silver3][s3]|`Simulation`|
+
+|기록분류|이름|티어|유형|상태|최근 제출 코드|
+|---|---|---|---|---|---|
+|일반 연습|[배열 회전](https://www.codetree.ai/training-field/search/problems/array-rotation)|![Silver3][s3]|`Simulation`|![Passed][passed]|[링크](https://github.com/DagonLee/codetree-TILs/blob/main/231108/%EB%B0%B0%EC%97%B4%20%ED%9A%8C%EC%A0%84/array-rotation.java)|
 
 
 
