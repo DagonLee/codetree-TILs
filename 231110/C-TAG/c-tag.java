@@ -22,8 +22,6 @@ public class Main {
                     tmpB += groupB[r][curLine];
                 }
                 if(setA.contains(tmpB) || setB.contains(tmpA) || tmpA.equals(tmpB)){
-                    setA.clear();
-                    setB.clear();
                     dupCheck = true;
                     break;
                 }
@@ -35,6 +33,8 @@ public class Main {
             if(!dupCheck){
                 ans++;
             }
+            setA.clear();
+            setB.clear();
             return;            
         }
         for(int i = cur; i < m; i++){
