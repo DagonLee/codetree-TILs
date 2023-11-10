@@ -43,6 +43,9 @@ public class Main {
         for(int i = 0; i < g; i++){
             int cnt = 0;
             int toAdd = 0;
+            if(lst[i].size() == 1){
+                continue;
+            }
             for(int j = 0; j < lst[i].size(); j++){
                 int now =lst[i].get(j);
                 if(!set.contains(now)){
