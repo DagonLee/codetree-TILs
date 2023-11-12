@@ -18,7 +18,7 @@ public class Main {
         for(int i = 0; i < n; i++){
             int a = Integer.parseInt(st.nextToken());
             if(set.floor(a) != null){
-                set.remove(a);
+                set.remove(set.floor(a));
             }
             else{
                 System.out.println(i);
