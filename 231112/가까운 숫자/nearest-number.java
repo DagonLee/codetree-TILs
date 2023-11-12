@@ -8,7 +8,7 @@ public class Main {
         set.add(0);
         int n = Integer.parseInt(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
-        int dist = 10^9;
+        double dist = Math.pow(10, 9);
         for(int i = 0; i < n ;i++){
             int val = Integer.parseInt(st.nextToken());
             set.add(val);
@@ -18,7 +18,7 @@ public class Main {
             if(set.lower(val) != null){
                 dist = Math.min(val - set.lower(val), dist);
             }
-            System.out.println(dist);
+            System.out.println((int)dist);
         }
     }
 }
