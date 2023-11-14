@@ -14,8 +14,11 @@ class Person implements Comparable<Person>{
         if(last_pos != p.last_pos){
             return last_pos - p.last_pos;
         }
+        else if(start != p.start){
+            return p.start - start;
+        }
         else{
-            return speed - p.speed;
+            return p.speed - speed;
         }
 
     }
@@ -37,11 +40,10 @@ public class Main {
             lst.add(new Person(s, v, s + t * v));
         }
         TreeSet<Person> set = new TreeSet<>();
-        set.add(lst.get(0));
-        for(int i = 1; i < lst.size();  i++){
+        for(int i = 0; i < lst.size();  i++){
             Person p = lst.get(i);
-            if(set.floor(p) != null){
-                set.remove(set.floor(p));
+            if(set.higher(p) != null){
+                continue;
             }
             set.add(p);
         }
