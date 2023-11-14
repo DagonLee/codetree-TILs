@@ -18,9 +18,6 @@ public class Main {
                 left = mid + 1;
             }
         }
-        if(idx > 0 && arr[idx] != target){
-            return -1;
-        }
         return idx;
     }
     public static void main(String[] args) throws IOException{
@@ -38,7 +35,7 @@ public class Main {
         for(int i = 0; i < m; i++){
             int target = Integer.parseInt(st.nextToken());
             int idx = lowerBound(target);
-            if(idx == -1){
+            if(idx < 0 || n <= idx || arr[idx] != target){
                 System.out.println(-1);
             }
             else{
