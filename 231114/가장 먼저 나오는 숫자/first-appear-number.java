@@ -18,7 +18,7 @@ public class Main {
                 left = mid + 1;
             }
         }
-        if(arr[idx] != target){
+        if(idx > 0 && arr[idx] != target){
             return -1;
         }
         return idx;
