@@ -25,7 +25,7 @@ public class Main {
         int idx = n;
         while(left <= right){
             int mid = (left + right) / 2;
-            if(arr[mid] > target){
+            if(arr[mid] >= target){
                 right = mid - 1;
                 idx = Math.min(idx, mid);
             }else{
