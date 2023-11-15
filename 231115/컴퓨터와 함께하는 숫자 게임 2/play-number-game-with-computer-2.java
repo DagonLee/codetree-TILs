@@ -6,10 +6,9 @@ public class Main {
     public static int search(int target){
         int left = 1;
         int right = m;
-        int cnt = 0;
+        int cnt = 1;
         while(left <= right){
             int mid = (left + right) / 2;
-            cnt++;
             if(target == mid){
                 break;
             }
@@ -19,6 +18,7 @@ public class Main {
             else{
                 left = mid + 1;
             }
+            cnt++;
         }
         return cnt;
     }
