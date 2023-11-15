@@ -27,9 +27,9 @@ public class Main {
         BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
         m = Long.parseLong(br.readLine());
         StringTokenizer st = new StringTokenizer(br.readLine());
-        long a = Integer.parseInt(st.nextToken());
-        long b = Integer.parseInt(st.nextToken());
-        long min = 1000000000;
+        long a = Long.parseLong(st.nextToken());
+        long b = Long.parseLong(st.nextToken());
+        long min = 1000000000000000000L;
         long max = 0;
         for(long i = a; i <= b; i++){
             long res = search(i);
