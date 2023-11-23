@@ -11,13 +11,13 @@ public class Main {
             String com = st.nextToken();
             if(com.equals("push")){
                 int num = Integer.parseInt(st.nextToken());
-                pq.add(num);
+                pq.add(-num);
             }
             else if(com.equals("size")){
                 System.out.println(pq.size());
             }
             else if(com.equals("empty")){
-                if(com.isEmpty()){
+                if(pq.isEmpty()){
                     System.out.println("1");
                 }
                 else{
@@ -25,10 +25,10 @@ public class Main {
                 }
             }
             else if(com.equals("pop")){
-                System.out.println(pq.poll());
+                System.out.println(-pq.poll());
             }
             else if(com.equals("top")){
-                System.out.println(pq.peek());
+                System.out.println(-pq.peek());
             }
         }
     }
